@@ -1,6 +1,9 @@
 Тестовое задание для adviator.com
+====================
 
 Установка
+------------
+```bash
 $ git clone https://github.com/228vit/adtest
 $ cd adtest
 $ php composer.phar update
@@ -9,7 +12,10 @@ $ sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 $ sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX app/cache app/logs
 
 Запуск
+------------
+```bash
 $ php app/console server:start
 
 Проверка
+------------
 http://127.0.0.1:8000/app_dev.php
