@@ -32,8 +32,6 @@ class DefaultController extends Controller
         return $this->render('default/draw.html.twig', array(
             'svg_figures' => $svg_figures,
         ));
-
-        print_r($figures); die();
     }
 
     /**
